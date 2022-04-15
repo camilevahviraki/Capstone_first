@@ -18,13 +18,13 @@
   display: flex;
   align-items: center;
   width: calc(100vw - 24px);
-  margin: 8px 12px 8px 12px;
+  margin: 5px 12px 5px 12px;
 }
 
 .icon {
   width: 40px;
   height: 40px;
-  margin: 30px;
+  margin: 30px 20px;
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
@@ -48,7 +48,7 @@
 
 .title_card {
   color: #ec5242;
-  width: 105px;
+  min-width: 96px;
 }
 
 .main_prog_title {
@@ -75,7 +75,7 @@
   font-family: cocogooseLight, sans-serif;
   font-weight: 600;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 5%;
   width: 90vw;
 }
 
@@ -83,7 +83,7 @@
   color: #ff1d0442;
   font-family: cocogooseTrial, sans-serif;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 30px;
   margin-top: 0;
   background-size: 100% 100%;
   background-image: url('images/background_title.jpg');
@@ -97,8 +97,8 @@
 }
 
 .section_intro {
-  width: calc(100vw - 40px);
-  margin-left: 20px;
+  width: 90%;
+  margin-left: 0;
   background-image: url("images/polygonal-grey-background-abstract-vector-geometric-design-polygonal-grey-background-abstract-vector.jpg");
   background-size: 100% 100%;
   display: flex;
@@ -168,13 +168,15 @@ body {
   font-family: 'lato', sans-serif;
   color: #272a31;
   margin: 10px 0 10px 0;
+  width: 90%;
 }
 
 .adresse {
   font-family: 'lato', sans-serif;
   color: #272a31;
   font-size: 16px;
-  margin: 10px 0 70px 0;
+  width: 90%;
+  margin-bottom: 120px;
 }
 
 .big_button {
@@ -310,7 +312,7 @@ body {
   color: #ce3524;
   font-family: cocogooseTrial, sans-serif;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 30px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
@@ -355,12 +357,13 @@ span {
 
 .past_card {
   position: relative;
-  width: calc(100vw - 120px);
+  width: 80vw;
   height: calc(100vw * 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 #past_card1 {
@@ -394,11 +397,11 @@ span {
 
 .year_last {
   font-family: cocogoose, sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 30px;
   color: #fff;
   z-index: 9;
-  margin: 40px;
+  margin: 0;
 }
 
 .ul_partners {
@@ -483,6 +486,7 @@ span {
   padding-top: 50px;
   padding-bottom: 50px;
   color: #fff;
+  height: 100vh;
 }
 
 #ul_nav li {
@@ -613,6 +617,7 @@ span {
 
   .big_title {
     width: 60vw;
+    font-size: 60px;
   }
 
   .about_Intro {
@@ -625,12 +630,13 @@ span {
   }
 
   #p_desckA {
-    width: 55vw;
+    width: 60vw;
   }
 
   .title_about {
     width: 60vw;
     line-height: 46px;
+    font-size: 50px;
   }
 
   #p_desc2 {
@@ -841,5 +847,15 @@ span {
 
   #last_tool {
     margin-right: 12vw;
+  }
+
+  .date_conf {
+    width: 60vw;
+    font-size: 32px;
+  }
+
+  .adresse {
+    width: 60vw;
+    margin-bottom: 150px;
   }
 }
