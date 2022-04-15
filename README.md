@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 You can also [type this Link](https://camilevahviraki.github.io/Capstone_first/) to see 
 the live demo of my personnal Portfolio.
 
-
+Take a look at my [descriptive video](https://www.loom.com/share/fc3c12ddf19747519dc2e0485d93a1fb) to understand well the concept.
 
 ## Authors
 
@@ -51,4 +51,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Inspiration: Microverse
+- Design Inspired by Cindy Shin
 - etc
