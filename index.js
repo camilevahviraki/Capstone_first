@@ -6,6 +6,7 @@ const HomeBtn = document.getElementById('home');
 const AboutBtn = document.getElementById('about');
 const HomeBtn2 = document.getElementById('home2');
 const AboutBtn2 = document.getElementById('about2');
+const logoN = document.getElementById('lodNav');
 
 function showNav() {
 
@@ -49,6 +50,8 @@ HomeBtn.addEventListener('click', showHomePage);
 
 AboutBtn2.addEventListener('click', showAboutPage);
 HomeBtn2.addEventListener('click', showHomePage);
+
+logoN.addEventListener('click', showHomePage);
 
 function displayCard(nameC, jobC, pictureC, storieC, containerC) {
   const containerCards = containerC;
@@ -144,31 +147,45 @@ function wrapCards (numOfCards) {
   const presenters = [
     {
       picture: 'images/Craig_rowe.jpg',
+      name: 'Craig Rowe',
+      job: 'Director of Manufacturing and distribution',
+      storie:
+        'To solve rural challenges around the world and increase connectivity, Craig Rowe launched Internet.org, a technology partnership that brings the Internet to remote and rural regions in the world.',
+    },
+    {
+      picture: 'images/Annaliese_Dayes.jpeg',
       name: 'Annaliese Dayes',
       job: 'Artistic director and management',
       storie:
-        'The study of public speaking began about 2,500 years ago in ancient Athens. Men were required to give speeches as part of their civic duties,',
+        'Annaliese Dayes did the study of public speaking in Artitic school in Sweden about 10 years ago. Girls were required to give speeches as part of their civic duties,',
     },
     {
-      picture: 'images/Craig_rowe.jpg',
-      name: 'Annaliese Dayes',
-      job: 'Artistic director and management',
+      picture: 'images/Square_Ophelia_Dennis.jpeg',
+      name: 'Ophelia Dennis',
+      job: 'Planning and Controlling director',
       storie:
-        'The study of public speaking began about 2,500 years ago in ancient Athens. Men were required to give speeches as part of their civic duties,',
+        'Ophelia Dennis ongoing learning has enabled her to embrace the broad scope the nursing profession',
     },
     {
-      picture: 'images/Craig_rowe.jpg',
-      name: 'Annaliese Dayes',
-      job: 'Artistic director and management',
+      picture: 'images/Alex_kramer.jpg',
+      name: 'Alex kramer',
+        job: 'Director Finance',
       storie:
-        'The study of public speaking began about 2,500 years ago in ancient Athens. Men were required to give speeches as part of their civic duties,',
+        'Undertaking an Australian School-based Apprenticeship helped Caitlin realise her dream carrer of becoming an ancounter',
     },
     {
-      picture: 'images/Craig_rowe.jpg',
-      name: 'Annaliese Dayes',
-        job: 'Artistic director and management',
+      picture: 'images/Charlie_brook.jpg',
+      name: 'Charlie Brook',
+        job: 'Technology and Engineering manager',
       storie:
-        'The study of public speaking began about 2,500 years ago in ancient Athens. Men were required to give speeches as part of their civic duties,',
+        'Charlie Brook managed to find a job where she combines her knoweldge of Electronic and Telecomunication with his love of environment',
+    },
+    {
+      picture: 'images/Chloe_everton.jpg',
+      name: 'Chloe Everton',
+        job: 'Organization director and manager',
+      storie:
+        'Chloe Everton changed careers to management after studying in photgraphy and psychology.Shes now in the job of her childhood dream ',
     }
   ];
   let listLength = 2;
