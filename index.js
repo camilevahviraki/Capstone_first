@@ -141,7 +141,7 @@ function displayCard(nameC, jobC, pictureC, storieC, containerC) {
 
 }
 
-function wrapCards(numOfCards) {
+function wrapCards() {
   const presenters = [
     {
       picture: 'images/Craig_rowe.jpg',
@@ -184,7 +184,7 @@ function wrapCards(numOfCards) {
       job: 'Organization director and manager',
       storie:
         'Chloe Everton changed careers to management after studying in photgraphy and psychology.Shes now in the job of her childhood dream',
-    }
+    },
   ];
 
   const showMore = document.getElementById('showMore');
@@ -228,4 +228,4 @@ function wrapCards(numOfCards) {
   }
 
 }
-wrapCards ();
+wrapCards();
