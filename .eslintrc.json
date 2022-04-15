@@ -12,6 +12,10 @@
     },
     "extends": ["airbnb-base"],
     "rules": {
+      "prefer-arrow-callback":"off",
+      "padded-blocks":"off",
+      "no-trailing-spaces":"off",
+      "func-names":"off",
       "no-shadow": "off",
       "no-param-reassign": "off",
       "eol-last": "off",

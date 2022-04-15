@@ -8,6 +8,10 @@
   src: url('fonts/Cocogoose\ Pro-trial.ttf');
 }
 
+.tools {
+  display: none;
+}
+
 .card {
   background-color: #272a31a2;
   color: rgba(27, 47, 90, 0.986);
@@ -507,7 +511,7 @@ span {
 
 .card:hover {
   border: 1px solid #fff;
-} 
+}
 
 .see_past_wrapper {
   display: flex;
@@ -527,7 +531,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+}
 
 #NavDesck {
   display: none;
@@ -711,7 +715,7 @@ span {
 
   .title_footer {
     width: 150px;
-  } 
+  }
 
   body {
     width: 100vw;
@@ -750,7 +754,6 @@ span {
 
   .logo_div_Nav {
     display: flex;
-    display: flex;
     align-items: center;
   }
 
@@ -783,6 +786,7 @@ span {
     position: fixed;
     width: 100vw;
     z-index: 10;
+    top: 30px;
   }
 
   #NavMobile {
@@ -805,5 +809,36 @@ span {
     display: flex;
     padding: 70px 0;
     align-items: center;
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+    background-color: #272a31;
+    height: 30px;
+    position: fixed;
+    width: 100vw;
+  }
+
+  .fb_icon {
+    height: 20px;
+    width: 20px;
+    padding: 0 6px;
+  }
+
+  .english {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 0 7px;
+  }
+
+  #last_tool {
+    margin-right: 12vw;
   }
 }

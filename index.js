@@ -9,7 +9,6 @@ const AboutBtn2 = document.getElementById('about2');
 const logoN = document.getElementById('lodNav');
 
 function showNav() {
-
   const UlNav = document.getElementById('ul_nav');
 
   document.getElementById('hamburger1').style.display = 'none';
@@ -18,7 +17,6 @@ function showNav() {
   console.log('Nav shown');
 }
 function HideNav() {
-
   const UlNav = document.getElementById('ul_nav');
 
   document.getElementById('hamburger1').style.display = 'flex';
@@ -105,7 +103,7 @@ function displayCard(nameC, jobC, pictureC, storieC, containerC) {
       class: 'p_presenter',
       type: 'p',
       texte: `${storieC}`,
-    }
+    },
   ];
 
   function createEveryTag() {
@@ -128,7 +126,7 @@ function displayCard(nameC, jobC, pictureC, storieC, containerC) {
 
       output.push(AllTags[i].name);
     }
-  
+
     return output;
   }
   let myTags = {};
@@ -143,7 +141,7 @@ function displayCard(nameC, jobC, pictureC, storieC, containerC) {
 
 }
 
-function wrapCards (numOfCards) {
+function wrapCards(numOfCards) {
   const presenters = [
     {
       picture: 'images/Craig_rowe.jpg',
@@ -169,30 +167,30 @@ function wrapCards (numOfCards) {
     {
       picture: 'images/Alex_kramer.jpg',
       name: 'Alex kramer',
-        job: 'Director Finance',
+      job: 'Director Finance',
       storie:
         'Undertaking an Australian School-based Apprenticeship helped Caitlin realise her dream carrer of becoming an ancounter',
     },
     {
       picture: 'images/Charlie_brook.jpg',
       name: 'Charlie Brook',
-        job: 'Technology and Engineering manager',
+      job: 'Technology and Engineering manager',
       storie:
         'Charlie Brook managed to find a job where she combines her knoweldge of Electronic and Telecomunication with his love of environment',
     },
     {
       picture: 'images/Chloe_everton.jpg',
       name: 'Chloe Everton',
-        job: 'Organization director and manager',
+      job: 'Organization director and manager',
       storie:
-        'Chloe Everton changed careers to management after studying in photgraphy and psychology.Shes now in the job of her childhood dream ',
+        'Chloe Everton changed careers to management after studying in photgraphy and psychology.Shes now in the job of her childhood dream',
     }
   ];
-  let listLength = 2;
+
   const showMore = document.getElementById('showMore');
   const showMore2 = document.getElementById('showMore2');    
 
-  for (let i=0; i < presenters.length; i += 1) {
+  for (let i = 0; i < presenters.length; i += 1) {
     const nameCard = presenters[i].name;
     const jobCard = presenters[i].job;
     const pictureCard = presenters[i].picture;
@@ -203,7 +201,7 @@ function wrapCards (numOfCards) {
       section[i].style.display = 'none';
     }
     showMore.addEventListener('click', function () {
-      showMore2.style.display = 'flex'; 
+      showMore2.style.display = 'flex';
       showMore.style.display = 'none';
       section[i].style.display = 'flex';
       console.log('clicked');
@@ -212,7 +210,7 @@ function wrapCards (numOfCards) {
     showMore2.addEventListener('click', function () {
       if (i >= 2) {
         section[i].style.display = 'none';
-        showMore2.style.display = 'none'; 
+        showMore2.style.display = 'none';
         showMore.style.display = 'flex';
         console.log('Hiden');
       }
@@ -221,7 +219,7 @@ function wrapCards (numOfCards) {
     displayCard(nameCard, jobCard, pictureCard, storieCard, document.getElementById('futuresSp'));
   }
 
-  for (let i=0; i < presenters.length; i += 1) {
+  for (let i = 0; i < presenters.length; i += 1) {
     const nameCard = presenters[i].name;
     const jobCard = presenters[i].job;
     const pictureCard = presenters[i].picture;
@@ -230,6 +228,4 @@ function wrapCards (numOfCards) {
   }
 
 }
-  
 wrapCards ();
-
