@@ -2,6 +2,7 @@
   font-family: cocogooseLight;
   src: url('fonts/Cocogoose\ Pro\ Thin-trial.ttf');
 }
+
 @font-face {
   font-family: cocogooseTrial;
   src: url('fonts/Cocogoose\ Pro-trial.ttf');
@@ -20,14 +21,13 @@
   width: 40px;
   height: 40px;
   margin: 30px;
-  /*filter: sepia(100%) hue-rotate(142deg) saturate(500%);*/
-  -webkit-filter: invert(100%); /* Safari/Chrome */
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 .main_program {
   background-image: url("images/background_pattern.jpg");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
@@ -36,15 +36,15 @@
 }
 
 .p_card {
-    color: white;
-    font-size: 10px;
-    font-family: cocogoose;
-    font-weight: 200;
+  color: white;
+  font-size: 10px;
+  font-family: cocogoose, sans-serif;
+  font-weight: 200;
 }
 
 .title_card {
-    color: #ec5242;
-    width: 105px;
+  color: #ec5242;
+  width: 105px;
 }
 
 .main_prog_title {
@@ -72,7 +72,7 @@
   font-weight: 600;
   font-size: 20px;
   margin-left: 20px;
-
+  width: 90vw;
 }
 
 .big_title {
@@ -109,10 +109,10 @@ body {
 
 .hamburger {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 20px;
-  height: 15px;
+  top: 30px;
+  left: 30px;
+  width: 40px;
+  height: 30px;
 }
 
 #hamburger2 {
@@ -126,7 +126,7 @@ body {
   font-size: 30px;
 }
 
-.ul_nav li{
+.ul_nav li {
   list-style-type: none;
 }
 
@@ -137,7 +137,7 @@ body {
   width: calc(100vw * 0.4);
   height: calc(100vw * 0.4);
   transition: all 10s linear;
-  z-index: 10;  
+  z-index: 10;
 }
 
 .world_img:hover {
@@ -154,9 +154,10 @@ body {
 }
 
 #p_desc2 {
-  width: calc(100% - 60px);
+  width: calc(100% - 80px);
   background-color: #fff;
   border: 1px solid #d3d3d3;
+  margin-left: 24px !important;
 }
 
 .date_conf {
@@ -169,7 +170,7 @@ body {
   font-family: 'lato', sans-serif;
   color: #272a31;
   font-size: 16px;
-  margin:10px 0 70px 0;
+  margin: 10px 0 70px 0;
 }
 
 .big_button {
@@ -208,7 +209,7 @@ body {
 }
 
 .imagesP {
-  position: relative; 
+  position: relative;
   width: 130px;
   height: 130px;
 }
@@ -255,22 +256,20 @@ body {
 .img_more {
   width: 25px;
   height: 25px;
-  filter: sepia(100%) hue-rotate(90deg) saturate(500%);
 }
 
 .show_more {
-  width: calc(100vw - 20px);
+  color: #272a31;
+  width: calc(100vw - 30px);
   display: flex;
   align-items: center;
   background-color: #83838300;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
-}
-
-.p_more {
-  color: #272a31;
-  margin-left: calc((100% - 65px)/2);
-
+  justify-content: center;
+  padding: 8px;
+  margin-top: 45px;
+  margin-bottom: 40px;
 }
 
 #showMore2 {
@@ -282,7 +281,7 @@ body {
 }
 
 .logo {
-  width: calc((100vw - 120px)/3);
+  width: calc((100vw - 120px) / 3);
   height: auto;
   margin: 10px;
 }
@@ -318,7 +317,7 @@ body {
   color: #272a31;
   margin: 10px 0;
   padding: 16px;
-  font-size: 13px; 
+  font-size: 13px;
   align-self: center;
 }
 
@@ -340,7 +339,7 @@ span {
   color: #272a31;
   margin: 10px 0;
   padding: 16px;
-  font-size: 13px; 
+  font-size: 13px;
 }
 
 .see_past_title {
@@ -455,7 +454,7 @@ span {
 }
 
 .h2_logo {
-  font-family: cocogooseTrial;
+  font-family: cocogooseTrial, sans-serif;
   font-weight: 100;
   font-size: 40px;
   color: #272a31;
@@ -473,6 +472,7 @@ span {
   display: flex;
   flex-direction: column;
   background-color: #272a31;
+  z-index: 10;
 }
 
 #ul_nav {
@@ -488,17 +488,12 @@ span {
 
 .links_Nav {
   font-family: cocogooseTrial, sans-serif;
-  font-weight: 30px;
   color: #fff;
   text-decoration-color: transparent;
 }
 
 #About_section {
   display: none;
-}
-
-#NavMobile {
-  z-index: 10;
 }
 
 .See_whole {
@@ -518,7 +513,6 @@ span {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-
 }
 
 #ul_partenersHome {
@@ -547,6 +541,10 @@ span {
   display: flex;
 }
 
+#Ignite {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .Intro {
     margin-top: 210px;
@@ -560,7 +558,11 @@ span {
   }
 
   #showMore {
-    display: none;
+    display: none !important;
+  }
+
+  #showMore2 {
+    display: none !important;
   }
 
   .See_whole {
@@ -596,11 +598,11 @@ span {
     margin: 0;
     width: auto;
   }
-  
+
   .p_card {
     color: white;
     font-size: 11px;
-    font-family: cocogoose;
+    font-family: cocogoose, sans-serif;
     font-weight: 200;
     padding-left: 12px;
   }
@@ -623,8 +625,8 @@ span {
   }
 
   .title_about {
-   width: 60vw;
-   line-height: 46px;
+    width: 60vw;
+    line-height: 46px;
   }
 
   #p_desc2 {
@@ -633,14 +635,13 @@ span {
     border: 1px solid #d3d3d3;
     font-size: 12px;
   }
-  
+
   .contact_us {
     font-family: 'lato', sans-serif;
     color: #272a31;
     margin: 10px 0 80px 0;
     padding: 16px;
     font-size: 13px;
-    text-justify: center;
   }
 
   .titleAbout2 {
@@ -698,6 +699,12 @@ span {
     margin: 30px;
   }
 
+  #Ignite {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #ce4c24;
+  }
+
   .title_partners {
     color: #d3d3d3;
   }
@@ -705,7 +712,7 @@ span {
   .title_footer {
     width: 150px;
   } 
-  
+
   body {
     width: 100vw;
     margin: 0;
@@ -714,7 +721,7 @@ span {
   #ul_partenersHome {
     display: flex;
   }
-  
+
   #footerHome {
     display: flex;
   }
@@ -737,19 +744,24 @@ span {
     margin-left: calc((100% - 417px) / 2);
   }
 
-  #footerAbout p{
+  #footerAbout p {
     color: #fff;
   }
 
   .logo_div_Nav {
     display: flex;
+    display: flex;
+    align-items: center;
   }
 
   #Ul_desk {
     display: flex;
+    align-items: center;
     float: right;
     margin-left: calc(60vw - 495px);
-  } 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   #Ul_desk li {
     list-style-type: none;
@@ -773,11 +785,6 @@ span {
     z-index: 10;
   }
 
-  .logo_div_Nav {
-    display: flex;
-    align-items: center;
-  }
-
   #NavMobile {
     display: none;
   }
@@ -794,4 +801,9 @@ span {
     display: none !important;
   }
 
+  .footer {
+    display: flex;
+    padding: 70px 0;
+    align-items: center;
+  }
 }
