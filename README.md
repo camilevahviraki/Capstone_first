@@ -2,7 +2,7 @@
 
 # Microverse 1st capstone
 
-> This is my personnal portfolio, feel free to check it out.
+> Welcome to the vitron community event.
 
 
 ## Built With
