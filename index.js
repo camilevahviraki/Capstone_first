@@ -16,7 +16,6 @@ const navLinks = [
   { text: 'About', id: { desk: 'about2', mob: 'about' } },
   { text: 'Join', id: { desk: 'join', mob: 'join' } },
   { text: 'Program', id: { desk: 'Program', mob: 'Program' } },
-  // { text: 'News', id: {desk: 'News', mob: 'News'} },
   { text: 'V Ignite', id: { desk: 'Ignite', mob: '' } },
 ];
 
@@ -26,50 +25,42 @@ const presenters = [
     name: 'Craig Rowe',
     job: 'Director of Manufacturing and distribution',
     story:
-      'To solve rural challenges around the world and increase connectivity,\
-      Craig Rowe launched Internet.org, a technology partnership that brings \
-      the Internet to remote and rural regions in the world.',
+      'To solve rural challenges around the world and increase connectivity, Craig Rowe launched Internet.org, a technology partnership that brings the Internet to remote and rural regions in the world.',
   },
   {
     picture: 'images/Annaliese_Dayes.jpeg',
     name: 'Annaliese Dayes',
     job: 'Artistic director and management',
     story:
-      'Annaliese Dayes did the study of public speaking in Artitic school in \
-      Sweden about 10 years ago. Girls were required to give speeches as part \
-      of their civic duties,',
+      'Annaliese Dayes did the study of public speaking in Artitic school in Sweden about 10 years ago. Girls were required to give speeches as part of their civic duties,',
   },
   {
     picture: 'images/Square_Ophelia_Dennis.jpeg',
     name: 'Ophelia Dennis',
     job: 'Planning and Controlling director',
     story:
-      'Ophelia Dennis ongoing learning has enabled her to embrace the broad \
-      scope the nursing profession',
+      'Ophelia Dennis ongoing learning has enabled her to embrace the broad scope the nursing profession',
   },
   {
     picture: 'images/Alex_kramer.jpg',
     name: 'Alex kramer',
     job: 'Director Finance',
     story:
-      'Undertaking an Australian School-based Apprenticeship helped Caitlin \
-      realise her dream carrer of becoming an ancounter',
+      'Undertaking an Australian School-based Apprenticeship helped Caitlin realise her dream carrer of becoming an ancounter',
   },
   {
     picture: 'images/Charlie_brook.jpg',
     name: 'Charlie Brook',
     job: 'Technology and Engineering manager',
     story:
-      'Charlie Brook managed to find a job where she combines her knoweldge \
-      of Electronic and Telecomunication with his love of environment',
+      'Charlie Brook managed to find a job where she combines her knoweldge of Electronic and Telecomunication with his love of environment',
   },
   {
     picture: 'images/Chloe_everton.jpg',
     name: 'Chloe Everton',
     job: 'Organization director and manager',
     story:
-      'Chloe Everton changed careers to management after studying in \
-      photgraphy and psychology.Shes now in the job of her childhood dream',
+      'Chloe Everton changed careers to management after studying in photgraphy and psychology.Shes now in the job of her childhood dream',
   },
 ];
 
@@ -83,6 +74,7 @@ const displayNavLinks = (container, screen) => {
           ${link.text}
         </a>
       </li>`;
+    return null;
   });
 };
 
@@ -150,6 +142,7 @@ const displayCards = (limit = presenters.length, container) => {
       </div>
     </div>
     `;
+    return null;
   });
 };
 
@@ -157,16 +150,16 @@ const displaySpeakersMobile = () => {
   showMore.addEventListener('click', () => {
     showLess.style.display = 'flex';
     showMore.style.display = 'none';
-    displayCards(limit = presenters.length, cardsContainerMobile);
+    displayCards(presenters.length, cardsContainerMobile);
   });
 
   showLess.addEventListener('click', () => {
     showLess.style.display = 'none';
     showMore.style.display = 'flex';
-    displayCards(limit = 2, cardsContainerMobile);
+    displayCards(2, cardsContainerMobile);
   });
 };
 
-displayCards(limit = 2, cardsContainerMobile);
+displayCards(2, cardsContainerMobile);
 displaySpeakersMobile();
-displayCards(limit = presenters.length, cardsContainerDesck);
+displayCards(presenters.length, cardsContainerDesck);
