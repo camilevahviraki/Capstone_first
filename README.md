@@ -58,33 +58,33 @@
 
 - You need to setup linter for html, css and javascript correctly
 
-### Prerequisites
+### Prerequisites <a name="prerequisites"></a>
 
 In order to run this project you need:
 
 - A code editor like Visual Studio Code
 
-### Setup
+### Setup  <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
 - copy this link `https://github.com/camilevahviraki/Capstone_first.git`.
+- write `git clone https://github.com/camilevahviraki/Capstone_first.git`.
+- `cd Capstone_first`
 
-### Install
+### Install <a name="install"></a>
 
 Install this project with: node package manager using npm install
 
-- open the command prompt in this directory.
-- write `git clone https://github.com/camilevahviraki/Capstone_first.git`.
 - `npm install`
 
-### Usage
+### Usage <a name="usage"></a>
 
 To run the project, execute the following command:
 
 - open `the index.html` file in your browser
 
-### Deployment
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
 You can deploy this project using:
 
@@ -92,7 +92,6 @@ You can deploy this project using:
 
  
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Author1**
 
