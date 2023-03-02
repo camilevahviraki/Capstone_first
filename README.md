@@ -21,7 +21,7 @@
 - [📝 License](#license)
 
 
-# 📖 [Capstone-first Vitron-Community] <a name="about-project"></a>
+# 📖 Capstone-first Vitron-Community <a name="about-project"></a>
 
 >  This is a website of the vitron community event.
 
