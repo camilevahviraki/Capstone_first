@@ -3,6 +3,10 @@
   src: url('fonts/Cocogoose\ Pro\ Thin-trial.ttf');
 }
 
+button {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: cocogooseTrial;
   src: url('fonts/Cocogoose\ Pro-trial.ttf');
@@ -19,6 +23,7 @@
   align-items: center;
   width: calc(100% - 24px);
   margin: 5px 12px 5px 12px;
+  cursor: pointer;
 }
 
 .icon {
@@ -194,6 +199,7 @@ body {
   background-color: #ec5242;
   border: none;
   margin: 30px;
+  cursor: pointer;
 }
 
 .big_button:hover {
@@ -345,6 +351,10 @@ body {
   position: absolute;
   top: 5px;
   left: 0;
+}
+
+.title_features {
+  font-family: 'Circular-Loom', sans-serif;
 }
 
 .partners_div {
@@ -632,6 +642,7 @@ span {
     display: block;
     color: #fff;
     margin: 50px;
+    font-family: 'Circular-Loom', sans-serif;
   }
 
   .big_button {
