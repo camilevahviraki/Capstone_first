@@ -51,7 +51,7 @@
 
 ### Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://camilevahviraki.github.io/Capstone_first/)
+- [Live Demo Link](https://capstone-first-vitron-events.netlify.app/#)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
