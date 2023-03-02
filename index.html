@@ -16,10 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    
-    <title>Capstone1</title>
+    <title>Global Vitron Summit</title>
   </head>
-  <body>
+  <body id="body">
     <header>
       <nav class="tools">
         <img src="images/facebook-icon.png" alt="" class="fb_icon">
@@ -29,36 +28,33 @@
         <a href="#" class="english" id="last_tool">Logout</a>
       </nav>
       <nav id="NavMobile">
-        <img src="images/Hamburger.png" alt="" class="hamburger" id="hamburger1"/>
-        <img src="images/x-icon.png" alt="" class="hamburger" id="hamburger2"/>
+        <a href="#">
+          <div class="show-mobile-menu-wrapp" id="hamburger1">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="hide-mobile-menu-wrapp" id="hamburger2">
+            <div class="child1"></div>
+            <div class="child2"></div>
+          </div>
+        </a>
         <ul class="ul_nav" id="ul_nav">
-          <li id="home"><a class="links_Nav" >Home</a></li>
-          <li id="about"><a class="links_Nav" >About</a></li>
-          <li><a class="links_Nav" >Join</a></li>
-          <li><a class="links_Nav" href="#">Program</a></li>
-          <li><a class="links_Nav" href="#">Sponsor</a></li>
-          <li><a class="links_Nav" href="#">News</a></li>
         </ul>
-        <!-- <img src="images/PngItem_1074369.png" alt="" class="world_img" /> -->
       </nav>
       <nav id="NavDesck">
-        <div class="logo_div_Nav" id="lodNav">
-          <img src="images/v-icon-3.jpg" alt="" class="img_logo2">
-          <h2 class="title_footer">The Vitron community</h2>
-        </div>
+        <a href="#" class="logo-link">
+          <div class="logo_div_Nav" id="lodNav">
+            <img src="images/v-icon-3.jpg" alt="" class="img_logo2">
+            <h2 class="title_footer">The Vitron community</h2>
+          </div>
+        </a>
         <ul id="Ul_desk">
-          <li id="home2"><a class="links_Nav" >Home</a></li>
-          <li id="about2"><a class="links_Nav" >About</a></li>
-          <li><a class="links_Nav" >Join</a></li>
-          <li><a class="links_Nav" href="#">Sponsor</a></li>
-          <li><a class="links_Nav" href="#">News</a></li>
-          <li><a class="links_Nav" id="Ignite" href="#">V Ignite</a></li>
         </ul>
-        <!-- <img src="images/PngItem_1074369.png" alt="" class="world_img" /> -->
       </nav>
-     
     </header>
-
     <section class="home_page" id="home_page">
       <div class="section_intro">
         <h2 class="Intro">"Hello, make it bounce with Vitron"</h2>
@@ -123,28 +119,21 @@
             </p>
           </div>
          </div>
-        <button class="big_button">Join cc Vitron.inc</button>
+        <button class="big_button" type="button">Join cc Vitron.inc</button>
         <a href="" class="See_whole">SEE THE WHOLE PROGRAM</a>
       </section>
       <h2 class="title_features">Futures speakers</h2>
         <div class="line_red"></div> 
-      <section class="futures_sp" id="futuresDesck">
-        <!--  -->
-      </section>  
-      <section class="futures_sp" id="futuresSp">
-        <!--  -->
-        <div class="feature_card" id="f2"></div>
-        <!--  -->
-      </section>
-      <button class="show_more" id="showMore">
+      <section class="futures_sp" id="futuresDesck"></section>  
+      <section class="futures_sp" id="futuresSp"></section>
+      <button class="show_more" id="showMore" type="button">
         MORE
         <img src="images/showMore.png" alt="" class="img_more" />
       </button>
-      <button class="show_more" id="showMore2">
+      <button class="show_more" id="showLess" type="button">
         LESS
         <img src="images/Show_less.png" alt="" class="img_more" />
       </button>
-      <!--  -->
       <div class="partners_div" id="ul_partenersHome">
         <h2 class="title_partners">Partners</h2>
         <div class="line_red"></div>
@@ -176,9 +165,6 @@
         <p class="p_footer">2010-2022 Vitron company, somme right reserved</p>
       </div>
     </section>
-      
-    <!-- </section> -->
-
     <section class="About_section" id="About_section">
       <div class="about_Intro">
         <h2 class="Intro">"Hello, make it bounce with Vitron"</h2>
@@ -206,25 +192,25 @@
         2019.
       </p>
       <div id="logo_big">
-        
         <img src="images/v-icon-3.jpg" alt="" class="img_logo">
         <h2 class="h2_logo">Vitron Tech</h2>
       </div>
       <div class="line_grey100"></div>
-
       <h3 class="see_past_title">See our last 2 devices</h3>
       <div class="line_red"></div>
       <p class="p_see_past">Take a look at our last 2 devices </p>
       <div class="see_past_wrapper">
         <div class="past_card" id="past_card1">
-          <div class="overlay_red"></div>
+          <img src="./images/summer_woofer.jpg" class="past_card_image" alt=""/>
           <h2 class="year_last">2010</h2>
           <p class="p_past_card">The votronXPZ</p>
+          <div class="overlay_red"></div>
         </div>
         <div class="past_card" id="past_card2">
-          <div class="overlay_red"></div>
+          <img src="./images/black-speakers-woofer.jpg" class="past_card_image" alt=""/>
           <h2 class="year_last">2015</h2>
           <p class="p_past_card">The votronXPZplus</p>
+          <div class="overlay_red"></div>
         </div>
       </div>
       <div class="partners_div" id="ul_partenersAbout">
@@ -255,9 +241,8 @@
         <h2 class="title_footer">
           The Vitron community
         </h2>
-        <p class="p_footer">2010-2022 Vitron company, somme right reserved</p>
+        <p class="p_footer">2010-2022 Vitron company, some right reserved</p>
       </div>
-      <!--  -->
     </section>  
     <script type="text/javascript" src="index.js"></script>
   </body>
