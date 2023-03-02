@@ -3,7 +3,7 @@ const ButtonHideab = document.getElementById('hamburger2');
 const HomePage = document.getElementById('home_page');
 const AboutPage = document.getElementById('About_section');
 const logoN = document.getElementById('lodNav');
-const cardsContainerDesck =  document.getElementById('futuresDesck');
+const cardsContainerDesck = document.getElementById('futuresDesck');
 const cardsContainerMobile = document.getElementById('futuresSp');
 const showMore = document.getElementById('showMore');
 const showLess = document.getElementById('showLess');
@@ -12,12 +12,12 @@ const navLinksMobile = document.getElementById('ul_nav');
 const body = document.getElementById('body');
 
 const navLinks = [
-  { text: 'Home', id: {desk: 'home2', mob: 'home'} },
-  { text: 'About', id: {desk: 'about2', mob: 'about'} },
-  { text: 'Join', id: {desk: 'join', mob: 'join'} },
-  { text: 'Program', id: {desk: 'Program', mob: 'Program'} },
+  { text: 'Home', id: { desk: 'home2', mob: 'home' } },
+  { text: 'About', id: { desk: 'about2', mob: 'about' } },
+  { text: 'Join', id: { desk: 'join', mob: 'join' } },
+  { text: 'Program', id: { desk: 'Program', mob: 'Program' } },
   // { text: 'News', id: {desk: 'News', mob: 'News'} },
-  { text: 'V Ignite', id: {desk: "Ignite", mob: ''} }
+  { text: 'V Ignite', id: { desk: 'Ignite', mob: '' } },
 ];
 
 const presenters = [
@@ -77,13 +77,13 @@ const displayNavLinks = (container, screen) => {
   container.innerHTML = '';
 
   navLinks.map((link) => {
-      container.innerHTML += `
+    container.innerHTML += `
       <li>
-        <a class="links_Nav" id="${screen === 'desk'? link.id.desk: link.id.mob}" href="#">
+        <a class="links_Nav" id="${screen === 'desk' ? link.id.desk : link.id.mob}" href="#">
           ${link.text}
         </a>
-      </li>`
-  })
+      </li>`;
+  });
 };
 
 displayNavLinks(navLinksMobile, 'mob');
@@ -121,16 +121,15 @@ function showAboutPage() {
 
 ButtonShowab.addEventListener('click', showNav);
 ButtonHideab.addEventListener('click', HideNav);
-AboutBtn.addEventListener('click', () => {showAboutPage(); HideNav()});
-HomeBtn.addEventListener('click', () => {showHomePage(); HideNav()});
+AboutBtn.addEventListener('click', () => { showAboutPage(); HideNav(); });
+HomeBtn.addEventListener('click', () => { showHomePage(); HideNav(); });
 AboutBtn2.addEventListener('click', showAboutPage);
 HomeBtn2.addEventListener('click', showHomePage);
 logoN.addEventListener('click', showHomePage);
 
 const displayCards = (limit = presenters.length, container) => {
-
   container.innerHTML = '';
-  
+
   presenters.slice(0, limit).map((presenter) => {
     container.innerHTML += `
     <div class="feature_card">
@@ -150,23 +149,23 @@ const displayCards = (limit = presenters.length, container) => {
       </p>
       </div>
     </div>
-    `
-  })
-}
+    `;
+  });
+};
 
 const displaySpeakersMobile = () => {
   showMore.addEventListener('click', () => {
     showLess.style.display = 'flex';
     showMore.style.display = 'none';
     displayCards(limit = presenters.length, cardsContainerMobile);
-  })
+  });
 
   showLess.addEventListener('click', () => {
     showLess.style.display = 'none';
     showMore.style.display = 'flex';
     displayCards(limit = 2, cardsContainerMobile);
-  })
-}
+  });
+};
 
 displayCards(limit = 2, cardsContainerMobile);
 displaySpeakersMobile();
