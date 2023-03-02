@@ -106,7 +106,7 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Loom Video Of Project <a name="Description of project"></a>
+## Project explanation <a name="Description of project"></a>
 
 - Loom: [Loom-Video](https://www.loom.com/share/fc3c12ddf19747519dc2e0485d93a1fb)
 
