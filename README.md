@@ -43,8 +43,8 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Simple overview and access]**
-- **[Desktop and mobile version of projects]**
+- **Simple overview and access**
+- **Desktop and mobile version of the website**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,13 +76,13 @@ Install this project with: node package manager using npm install
 
 - open the command prompt in this directory.
 - write `git clone https://github.com/camilevahviraki/Capstone_first.git`.
-- npm install
+- `npm install`
 
 ### Usage
 
 To run the project, execute the following command:
 
-- open the 'index.html' file in your browser
+- open `the index.html` file in your browser
 
 ### Deployment
 
@@ -103,7 +103,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add the V-ignite page]**
+- [ ] **Add the V-ignite page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
